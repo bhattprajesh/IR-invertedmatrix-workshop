@@ -1,0 +1,136 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# .gitignore — IR Inverted Matrix Workshop
+# PROG8245 – Natural Language Processing
+# ─────────────────────────────────────────────────────────────────────────────
+
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+MANIFEST
+
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env
+.python-version
+
+
+# ── Jupyter Notebook ──────────────────────────────────────────────────────────
+# Keep checkpoints out of version control
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Jupyter notebook lock files
+.jupyter/
+
+# nbconvert output artefacts
+*.html
+*.pdf
+*.slides.html
+*.py        # exported Python scripts (add exceptions below if needed)
+!submit_assignment.py
+!utils/*.py
+
+
+# ── NLTK data downloads ───────────────────────────────────────────────────────
+# NLTK downloads to a local folder in some environments
+nltk_data/
+
+
+# ── IDE / editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.spyderproject.cfg
+.spyproject/
+.ropeproject/
+
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+
+# ── Logs & temp files ─────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+
+
+# ── Workshop-specific ─────────────────────────────────────────────────────────
+# Instructor-only materials — students should not commit these
+Instructor_Instructions_Workshop.ipynb
+
+# Auto-generated gradebook (created by submit_assignment.py)
+# Keep utils/ version but ignore root-level copy
+submissions_log.csv
+
+# Large model / data files that should not be in git
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.arrow
+
+
+# ── Coverage & testing ────────────────────────────────────────────────────────
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+
+# ── Distribution / packaging ──────────────────────────────────────────────────
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.eggs/
+*.egg-link
+
+
+# ── Secrets & credentials ─────────────────────────────────────────────────────
+# Never commit API keys, tokens, or passwords
+.env
+.env.*
+secrets.py
+config/secrets.json
+*.pem
+*.key
